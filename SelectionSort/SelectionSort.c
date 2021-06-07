@@ -24,7 +24,7 @@ void randInit(Sqlist *L, int length) //打乱顺序，生成随机数组
 void SelectionSort(Sqlist *L)
 {
     int i,j,min = 0;
-    printf("Start Sort\n");
+    printf("Sorting\n");
     for (i = 1; i < L->length; i ++)
     {
         min = i;
