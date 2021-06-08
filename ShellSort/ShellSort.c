@@ -46,7 +46,7 @@ void ShellSort(Sqlist *L)
 {
     int i,j = 0;
     int increment = L->length;
-    printf("Shell Sorting\n");
+    printf("%s ...\n", __func__);
     do
     {
         increment = increment / 3 + 1; //增量序列
