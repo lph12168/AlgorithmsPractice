@@ -65,7 +65,7 @@ void Merge(int SR[], int TR[], int i, int m, int n)
     if (i <= m)
     {
         for (l = 0; l <= m - i; l++) {
-            TR[k + l] = SR[i + l];
+            TR[k + l] = SR[i + l]; //！！！调试了好几天一直越界出错的原因是把这里的l写成了1
             printf("Remained: TR[%d] = %d\n", k + l, TR[k + l]);
         }
     }
